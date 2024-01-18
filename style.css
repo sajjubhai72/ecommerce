@@ -1,0 +1,781 @@
+@import url("https://fonts.googleapis.com/css2?family=Poopins:wght@100;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* global tag */
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: rgb(35, 35, 85);
+}
+
+span {
+  font-size: 0.9rem;
+  color: #757373;
+}
+
+h6 {
+  font-size: 1.1rem;
+  color: rgb(24, 24, 49);
+}
+
+/*Navigation Top */
+.top_header {
+  background-color: #144f82;
+  color: #fff;
+  padding: 7px 20px;
+  text-align: right;
+}
+#english_date {
+  color: #fff;
+}
+
+.top_header a {
+  text-decoration: none;
+  border: 1px solid #fff;
+  border-radius: 2px;
+  background: #edf3f8;
+  margin-left: 10px;
+  color: #144f82;
+  padding: 2px 5px;
+  cursor: pointer;
+}
+
+/* navigation */
+nav {
+  /* position: fixed; */
+  width: 100%;
+  background-color: #fff;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0.5vw 2vw;
+  align-items: center;
+  box-shadow: 2px 2px 10px rgb(0, 0, 0, 0.15);
+  z-index: 999;
+}
+
+nav img {
+  width: 80px;
+  cursor: pointer;
+}
+
+nav .navigation {
+  display: flex;
+}
+
+#manu-btn {
+  width: 30px;
+  height: 30px;
+  display: none;
+}
+
+#menu-cl {
+  display: none;
+}
+
+nav .navigation ul {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+nav .navigation ul li {
+  list-style: none;
+  margin-left: 30px;
+}
+
+nav .navigation ul li a {
+  text-decoration: none;
+  color: rgb(21, 21, 100);
+  font-size: 16px;
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+
+nav .navigation ul li a:active,
+nav .navigation ul li a:hover {
+  color: #fdc93b;
+}
+
+/*------ HOME -------*/
+#home {
+  background-image: linear-gradient(rgba(9, 5, 54, 0.3), rgba(5, 4, 46, 0.7)),
+    url("images/school.jpg");
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-top: 40px;
+}
+
+#home h2 {
+  color: #fff;
+  font-size: 2.2rem;
+  letter-spacing: 1px;
+}
+
+#home p {
+  width: 50%;
+  color: #fff;
+  font-size: 0.9rem;
+  line-height: 25px;
+}
+
+#home .btn {
+  margin-top: 30px;
+}
+
+#home a {
+  text-decoration: none;
+  font-size: 0.9rem;
+  padding: 13px 35px;
+  background-color: #fff;
+  font-weight: 600;
+  border-radius: 5px;
+}
+
+#home a.blue {
+  color: #fff;
+  background: rgb(21, 21, 100);
+  transition: 0.3s ease;
+}
+
+#home a.blue:hover {
+  color: rgb(21, 21, 100);
+  background: #fff;
+}
+
+#home a.yellow {
+  color: #fff;
+  background: #fdc93b;
+  transition: 0.3s ease;
+}
+
+#home a.yellow:hover {
+  color: rgb(21, 21, 100);
+  background: #fff;
+}
+
+/*------- Features --------*/
+#features {
+  padding: 8vw 8vw 0 8vw;
+  text-align: center;
+}
+
+#features .fea-base {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 1rem;
+  padding: 1vw 4vw;
+  margin-top: 20px;
+}
+
+#features .fea-box {
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  text-align: center;
+  background: #f9f9ff;
+  height: 100%;
+}
+
+#features .fea-box i {
+  padding-right: 10px;
+  font-size: 2.3rem;
+  color: rgb(44, 44, 80);
+}
+
+#features .fea-box h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: rgb(46, 46, 59);
+  padding: 13px 0 7px 0;
+}
+
+#features .fea-box p {
+  font-size: 1rem;
+  font-weight: 400;
+  color: rgb(70, 70, 87);
+}
+
+/* Our Subjects */
+#course {
+  margin-top: -20px;
+  padding: 4vw 4vw 0 4vw;
+  text-align: center;
+  height: 55%;
+}
+
+#course .sub-box {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 1rem;
+  margin-top: 10px;
+}
+
+#course .subject {
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  text-align: start;
+  background: #f9f9ff;
+  height: 80%;
+}
+
+#course .subject img {
+  width: 100%;
+  height: 60%;
+  background-size: cover;
+  background-position: center;
+}
+
+#course .subject .details {
+  padding: 20px 20px 0 20px;
+}
+
+/* why we choose our school */
+#ch-school {
+  margin-top: -10%;
+  padding: 8vw 8vw 0 8vw;
+  text-align: center;
+}
+
+#ch-school .sch-box {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 1rem;
+  margin-top: 20px;
+}
+
+#ch-school .school {
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  text-align: start;
+  background: #f9f9ff;
+  height: 100%;
+}
+
+#ch-school .school img {
+  width: 100%;
+  height: 60%;
+  background-size: cover;
+  background-position: center;
+}
+
+#ch-school .school .deta {
+  padding: 20px 20px 0 20px;
+}
+
+/* Experts */
+#experts {
+  margin-top: -20px;
+  padding: 8vw 8vw;
+  text-align: center;
+}
+
+#experts .exp-box {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 1rem;
+  margin-top: 50px;
+}
+
+#experts .exp-box img {
+  width: 100%;
+  height: 70%;
+  background-size: cover;
+  background-position: center;
+}
+
+#experts .exp-box .profile {
+  background: #fafaf1;
+}
+
+.pro-links {
+  margin-top: 10px;
+}
+
+.pro-links i {
+  padding: 10px 13px;
+  border: 1px solid rgb(21, 21, 100);
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.pro-links i:hover {
+  background: rgb(21, 21, 100);
+  color: #fff;
+  border: 1px solid rgb(21, 21, 100);
+  cursor: pointer;
+}
+
+/*-------- Footer -------- */
+footer {
+  height: 100vh;
+  padding: 8vw;
+  background-color: #101c32;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+footer .foot-col {
+  padding-bottom: 40px;
+}
+
+footer h3 {
+  color: rgb(241, 240, 245);
+  font-weight: 600;
+  padding-bottom: 20px;
+}
+
+footer li {
+  list-style: none;
+  color: #7b838a;
+  padding: 10px 0;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+footer li:hover {
+  color: rgb(241, 240, 245);
+}
+
+footer p {
+  color: #7b838a;
+}
+
+footer .subscribe {
+  margin-top: 20px;
+}
+
+footer input {
+  width: 220px;
+  padding: 15px 12px;
+  background: #334f6c;
+  border: none;
+  outline: none;
+  color: #fff;
+}
+
+footer .subscribe a {
+  text-decoration: none;
+  font-size: 0.9rem;
+  padding: 12px 25px;
+  background-color: #fff;
+  font-weight: 600;
+  border-radius: 5px;
+}
+
+footer .cooyright {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+footer .cooyright p {
+  color: #fff;
+}
+
+footer .cooyright .pro-links i {
+  margin-top: 0px;
+}
+
+footer .cooyright .pro-links i {
+  background-color: #5f7185;
+  color: #fff;
+}
+
+footer .cooyright .pro-links i:hover {
+  background: #fdc93b;
+  color: #2c2c2c;
+}
+
+/*---------- Notice Page ---------*/
+/*-------- Home ----------*/
+
+#main-notice {
+  width: 100%;
+  height: 100%;
+  /* background-color: #2c2c2c; */
+}
+
+#main-notice .sam {
+  height: 2.3rem;
+}
+
+#main-notice .sam h5 {
+  text-align: center;
+  padding-top: 8px;
+  font-size: 20px;
+  /* color: #fff; */
+}
+
+.notice_header {
+  height: 4.5rem;
+  text-align: center;
+  padding-top: 17px;
+  font-size: 30px;
+  font-weight: 700;
+  background-color: #144f82;
+  color: #fff;
+  /* border-radius: 5px 5px 0px 0px; */
+  border-bottom: 4px solid #b08699;
+}
+
+.row-search {
+  height: 3rem;
+  padding: 10px 12px;
+  margin-bottom: 0px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.dataTables-1 input {
+  width: 12vw;
+  height: 4vh;
+  font-size: 14px;
+  font-weight: 400;
+  border-radius: 3px;
+  /* border: none; */
+  background: #fff;
+  color: #7e7c87;
+  outline: none;
+}
+
+table {
+  border: 0.5px;
+  width: 80%;
+  padding: 5px;
+  border-collapse: collapse;
+  /* background-color: #323232; */
+}
+thead {
+  background: #7e7c87;
+  height: 8vh;
+}
+
+a {
+  text-decoration: none;
+}
+
+.odd {
+  border: 1px solid #7e7c87;
+  background: #e9ecef;
+  height: 6vh;
+}
+
+.even {
+  border: 1px solid #7e7c87;
+  background: #f7f6fa;
+  height: 6vh;
+}
+
+.foot {
+  margin-top: 50px;
+}
+
+
+/*---------- Contact Page ---------*/
+/*-------- HOME ----------*/
+#home-5 {
+  background-image: linear-gradient(rgba(9, 5, 54, 0.3), rgba(5, 4, 46, 0.7)),
+    url("images/contact-us.jpeg");
+  width: 100%;
+  height: 70vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-top: 40px;
+}
+
+#home-5 h2 {
+  color: #fff;
+  font-size: 2.2rem;
+  letter-spacing: 1px;
+}
+
+#home-5 p {
+  width: 40%;
+  color: #fff;
+  font-size: 0.9rem;
+  line-height: 25px;
+}
+
+/*---------- Contact ---------*/
+#contact {
+  padding: 8vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+#contact .get-in {
+  width: 350px;
+}
+
+#contact .get-in h2 {
+  color: #2c234d;
+  font-size: 30px;
+  font-weight: 800;
+  line-height: 0.8;
+  margin-bottom: 16px;
+}
+
+#contact .get-in p {
+  color: #686875;
+  line-height: 24px;
+  margin-bottom: 33px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #e5e5ed;
+}
+
+#contact .get-in h3 {
+  color: #2c234d;
+  font-size: 16pxpx;
+  font-weight: 600;
+  line-height: 26px;
+  margin-bottom: 15px;
+}
+
+#contact .get-in .get-deatails div {
+  display: flex;
+}
+
+#contact .get-in .get-deatails div .get {
+  font-size: 16px;
+  line-height: 22px;
+  color: #5838fc;
+  margin-right: 28px;
+}
+
+#contact .get-in .get-deatails div p {
+  font-size: 14px;
+  border-bottom: none;
+  line-height: 22px;
+  margin-bottom: 15px;
+}
+
+#contact .get-in .get-deatails .pro-links i {
+  margin-right: 8px;
+  padding: 10px;
+  border: 1px solid rgb(21, 21, 100);
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.pro-links i:hover {
+  background: rgb(21, 21, 100);
+  color: #fff;
+  border: 1px solid rgb(21, 21, 100);
+  cursor: pointer;
+}
+
+#contact .form {
+  width: 60%;
+  background: #f7f6fa;
+  padding: 40px;
+  border-radius: 10px;
+}
+
+#contact .form h4 {
+  font-size: 24px;
+  color: #2c234d;
+  line-height: 30px;
+  margin-bottom: 8px;
+}
+
+#contact .form p {
+  color: #686875;
+  line-height: 24px;
+  padding-bottom: 25px;
+}
+
+#contact .form .form-row {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+#contact .form .form-row input {
+  width: 48%;
+  font-size: 14px;
+  font-weight: 400;
+  border-radius: 3px;
+  border: none;
+  background: #fff;
+  color: #7e7c87;
+  outline: none;
+  padding: 20px 30px;
+  margin-bottom: 20px;
+}
+
+#contact .form .form-col input,
+#contact .form .form-col textarea {
+  width: 100%;
+  font-size: 14px;
+  font-weight: 400;
+  border-radius: 3px;
+  border: none;
+  background: #fff;
+  color: #7e7c87;
+  outline: none;
+  padding: 20px 30px;
+  margin-bottom: 20px;
+}
+
+#contact .form button {
+  font-size: 0.9rem;
+  padding: 13px 25px;
+  background: rgb(21, 21, 100);
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  color: #fff;
+}
+
+#map {
+  width: 100%;
+  height: 70vh;
+  margin-bottom: 5vw;
+}
+
+#map iframe {
+  width: 100%;
+  height: 100%;
+}
+
+/*-------- Timetable & Scheduling Page ----------*/
+/*-------- HOME ----------*/
+#home-4 {
+  background-image: linear-gradient(rgba(9, 5, 54, 0.3), rgba(5, 4, 46, 0.7)),
+    url("images/Timetable.png");
+  width: 100%;
+  height: 70vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-top: 40px;
+}
+
+#home-4 h2 {
+  color: #fff;
+  font-size: 2.2rem;
+  letter-spacing: 1px;
+}
+
+#home-4 p {
+  width: 40%;
+  color: #fff;
+  font-size: 0.9rem;
+  line-height: 25px;
+}
+
+/*------ Timetable ----------*/
+.cont {
+  width: 100%;
+  height: 13vh;
+  text-align: center;
+  color: #fff;
+  background-color: #7e7c87;
+}
+
+.cont h1 {
+  color: #fff;
+  font-size: 2vw;
+}
+
+#timetable {
+  height: 70vh;
+  display: flex;
+}
+
+#timetable .grade-container {
+  width: 230px;
+  background: #f7f6fa;
+  align-items: center;
+  list-style-type: disc;
+}
+
+.grades {
+  padding: 8vh 3vw;
+  cursor: pointer;
+}
+
+#timetable .grade-container .grades h4 {
+  font-size: 1.23vw;
+  text-align: center;
+}
+
+#timetable .grade-container .grades li {
+  text-align: center;
+  list-style: none;
+  margin-top: 10px;
+  margin-bottom: 2vh;
+}
+
+#timetable .grade-container .grades li:hover {
+  color: red;
+}
+
+#timetable .content h1 {
+  text-align: center;
+}
+
+table {
+  width: 100%;
+  height: 60%;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+.a {
+  height: 10vh;
+  font-size: 30px;
+  background-color: #c0c0c0;
+  color: #000;
+}
+
+th,
+td {
+  /* background-color: #e5e5ed; */
+  border: 1px solid #c0c0c0;
+  padding: 8px;
+}
+
+/*------------Student Details Page------------*/
+/*-----------Studend Record--------------*/
+.class-detail {
+  display: none;
+  padding: 10px;
+  background-color: #f0f0f0;
+  margin-top: 10px;
+}
+
+.class-button {
+  margin-right: 10px;
+}

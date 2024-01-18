@@ -1,0 +1,47 @@
+/*----------- Admission Form -----------*/
+.add-container {
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: #cccc;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .add-container h2{
+    text-align: center;
+    font-size: 33px;
+  }
+  
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    margin-top: 10px;
+  }
+  
+  input,
+  select,
+  textarea {
+    margin-top: 5px;
+    padding: 8px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+  }
+  
+  button {
+    margin-top: 10px;
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
